@@ -1,0 +1,15 @@
+[package]
+name = "keepass-fido2-broker"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+libc = "=0.2.189"
+libfido2-sys = { version = "=0.5.1", default-features = false }
+zeroize = { version = "=1.9.0", features = ["std"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true

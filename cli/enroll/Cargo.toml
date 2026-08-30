@@ -1,0 +1,17 @@
+[package]
+name = "keepass-fido2-enroll"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+libc = "=0.2.189"
+openssl = "=0.10.81"
+quick-xml = { version = "=0.42.0", features = ["encoding"] }
+rpassword = "=7.5.4"
+zeroize = { version = "=1.9.0", features = ["std"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true

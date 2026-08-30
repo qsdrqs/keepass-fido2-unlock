@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "keepassxc-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788125054,
+        "narHash": "sha256-lLvqFdBED8EmZLQU+CB8GUs0iettp0QFlRN45Ve11+E=",
+        "owner": "qsdrqs",
+        "repo": "keepassxc",
+        "rev": "85c71526e17c0c66f0a3b8b41ceb922b39182e35",
+        "type": "github"
+      },
+      "original": {
+        "owner": "qsdrqs",
+        "ref": "fido2-local-unlock",
+        "repo": "keepassxc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1788039129,
+        "narHash": "sha256-pa4Q0qErvCvzCaaUph7Sm37RhR4xvPrYI8Lgz6k85+A=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "keepassxc-src": "keepassxc-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

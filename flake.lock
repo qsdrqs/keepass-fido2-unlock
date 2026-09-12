@@ -3,11 +3,11 @@
     "keepassxc-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1788125054,
-        "narHash": "sha256-lLvqFdBED8EmZLQU+CB8GUs0iettp0QFlRN45Ve11+E=",
+        "lastModified": 1789246320,
+        "narHash": "sha256-XSu6diHoT7oKNnsDF1Y7GxaOyZML5wdnHFsUzPyRm1g=",
         "owner": "qsdrqs",
         "repo": "keepassxc",
-        "rev": "85c71526e17c0c66f0a3b8b41ceb922b39182e35",
+        "rev": "321edd28451f733c5ae7957fe804580b30d224ec",
         "type": "github"
       },
       "original": {
@@ -19,11 +19,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1788039129,
-        "narHash": "sha256-pa4Q0qErvCvzCaaUph7Sm37RhR4xvPrYI8Lgz6k85+A=",
+        "lastModified": 1789149629,
+        "narHash": "sha256-H6GwaZzZf+4npqv0tph94w9tZddSjFjmQrVsW0z78uk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
+        "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
         "type": "github"
       },
       "original": {

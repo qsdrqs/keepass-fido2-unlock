@@ -149,3 +149,11 @@ Windows FIDO2 integration is not provided; ordinary password and key-file
 unlock remains unchanged on unsupported clients.
 
 The complete wire contract is defined in [`PROTOCOL.md`](PROTOCOL.md).
+
+## License
+
+The original code and documentation in this repository are licensed under the
+[MIT License](LICENSE).
+
+The KeePassXC fork used by the flake and third-party dependencies remain under
+their respective licenses.

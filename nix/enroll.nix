@@ -23,6 +23,7 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "FIDO2 unlock file enrollment CLI for KeePassXC";
+    license = lib.licenses.mit;
     mainProgram = "keepass-fido2-enroll";
     platforms = lib.platforms.linux;
   };

@@ -33,6 +33,7 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "One-shot Linux FIDO2 broker for KeePassXC";
+    license = lib.licenses.mit;
     mainProgram = "keepass-fido2-broker";
     platforms = lib.platforms.linux;
   };

@@ -23,10 +23,12 @@
   zlib,
   zxcvbn-c,
 }:
-
+let
+  gitHead = src.shortRev or "dirty";
+in
 stdenv.mkDerivation {
   pname = "keepassxc-fido2";
-  version = "2.8.0-snapshot-85c7152";
+  version = "2.8.0-snapshot-${gitHead}";
 
   inherit src;
 
@@ -62,7 +64,7 @@ stdenv.mkDerivation {
   cmakeFlags = [
     (lib.cmakeFeature "KEEPASSXC_BUILD_TYPE" "Snapshot")
     (lib.cmakeFeature "KEEPASSXC_DIST_TYPE" "Native")
-    (lib.cmakeFeature "GIT_HEAD_OVERRIDE" "85c7152")
+    (lib.cmakeFeature "GIT_HEAD_OVERRIDE" gitHead)
     (lib.cmakeFeature "KPXC_FIDO2_BROKER_PATH" "${broker}/bin/keepass-fido2-broker")
     (lib.cmakeBool "KPXC_FEATURE_DOCS" false)
     (lib.cmakeBool "KPXC_FEATURE_UPDATES" false)
